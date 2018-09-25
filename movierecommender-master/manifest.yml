@@ -1,0 +1,19 @@
+---
+declared-services:
+   Watson Assistant (formerly Conversation)-xy:
+    label: conversation
+    plan: free
+   Tone Analyzer-az:
+    label: tone_analyzer
+    plan: lite
+applications:
+- name: techFatenProject
+  command: npm start
+  path: .
+  memory: 512M
+  instances: 1
+  services:
+  - Watson Assistant (formerly Conversation)-xy
+  - Tone Analyzer-az
+  env:
+    NPM_CONFIG_PRODUCTION: false
