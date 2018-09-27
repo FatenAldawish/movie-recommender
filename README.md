@@ -148,8 +148,11 @@ cd C:\Users\%username%\Downloads\movie-matching
   ```
   bx login
   ```
-5. Specify your targeted organization and space. You can find it in IBM Cloud Dashboard.
+5. Specify your targeted organization and space. You can find it in IBM Cloud Dashboard or use the following command.
 
+ ```
+ bx target --cf
+ ```
 
 6. Push the app to IBM Cloud.
 
